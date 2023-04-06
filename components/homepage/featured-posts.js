@@ -1,8 +1,8 @@
-import PostsGrid from "./components/posts/posts-grid";
+import PostsGrid from "../posts/posts-grid";
+import classes from "./featured-posts.module.css"
 
 function FeaturedPosts(props) {
-  return <section>
-    <h2>Featured Posts</h2>
+  return <section className={classes.section}>
      <PostsGrid posts={props.posts} />
   </section>
 }

@@ -3,8 +3,6 @@ import Hero from "../components/homepage/hero";
 import FeaturedPosts from "../components/homepage/featured-posts";
 import { getFeaturedPosts } from "@/lib/posts-util";
 
-
-
 function HomePage(props) {
   return (
     <Fragment>

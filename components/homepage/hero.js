@@ -1,15 +1,12 @@
-import Image from "next/image";
+import classes from './hero.module.css'
 
 function Hero() {
   return (
-    <section>
-      <div>
-        <Image src="" alt="A photo of Rex" width={300} height={300} />
-      </div>
-      <h1>Hi, I'm Rex</h1>
+    <section className={classes.section}>
+      <span>The blog</span>
+      <h1>Writings from our team</h1>
       <p>
-        I blog about software engineering - especially MERN stack and Artificial
-        Intelligence.
+        The latest industry news, interviews, technologies, and resources.
       </p>
     </section>
   );

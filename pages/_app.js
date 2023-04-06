@@ -1,3 +1,4 @@
+import Footer from "@/components/layout/footer";
 import "@/styles/globals.css";
 import Layout from "../components/layout/layout";
 
