@@ -1,3 +1,51 @@
+@font-face {
+  font-family: "Market Sans";
+  src: local("MarketSansThin"),
+    url("/fonts/MarketSans-Thin.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Market Sans";
+  src: local("MarketSansLight"),
+    url("/fonts/MarketSans-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Market Sans";
+  src: local("MarketSansRegular"),
+    url("/fonts/MarketSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Market Sans";
+  src: local("MarketSansMedium"),
+    url("/fonts/MarketSans-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Market Sans";
+  src: local("MarketSansSemiBold"),
+    url("/fonts/MarketSans-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Market Sans";
+  src: local("MarketSansBold"),
+    url("/fonts/MarketSans-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
@@ -81,7 +129,9 @@
 
 html,
 body {
-  max-width: 100vw;
+  max-width: var(--max-width);
+  width: 100%;
+  margin: 0 auto;
   overflow-x: hidden;
 }
 
@@ -93,6 +143,11 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+  font-family: 'Market Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-display: swap;
+  font-size: 1.5rem;
 }
 
 a {
