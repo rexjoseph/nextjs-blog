@@ -1,10 +1,16 @@
-import PostsGrid from "./posts-grid";
+import AllPostsItem from "./all-post-item";
+import classes from "./all-posts.module.css";
 
 function AllPosts(props) {
-  return <section>
-    <h1>All Posts</h1>
-    <PostsGrid posts={props.post} />
-  </section>
+  const { posts } = props;
+
+  return <ul className={classes.flex}>
+    {
+      posts.map((post) => (
+        <AllPostsItem key={post.slug} post={post} />
+      ))
+    }
+  </ul>
 }
 
 export default AllPosts;

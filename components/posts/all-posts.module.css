@@ -1,0 +1,7 @@
+.flex {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 2rem;
+  margin: 8rem auto;
+}

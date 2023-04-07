@@ -3,7 +3,7 @@ import PostHeader from "./post-header";
 import Image from 'next/image';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { atomDark } from 'react-syntax-highlighter/dist/cjs/styles/prism';
-
+import classes from './post-content.module.css'
 
 function PostContent(props) {
   const { post } = props;
@@ -35,9 +35,9 @@ function PostContent(props) {
     }
   }
 
-  return <article>
+  return <article className={classes.article}>
     <PostHeader title={post.title} image={imagePath} />
-    <ReactMarkdown renderers={customRenderers}>{post.content}</ReactMarkdown>
+    <ReactMarkdown components={customRenderers}>{post.content}</ReactMarkdown>
   </article>
 }
 

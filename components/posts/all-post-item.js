@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import classes from './post-item.module.css'
+import classes from './all-post-item.module.css'
 
 function PostItem(props) {
   const { author, title, image, excerpt, date, slug, tags } = props.post;

@@ -1,4 +1,4 @@
-import PostItem from "./post-item";
+import PostsItem from "./post-item";
 
 
 function PostsGrid(props) {
@@ -7,7 +7,7 @@ function PostsGrid(props) {
   return <ul>
     {
       posts.map((post) => (
-        <PostItem key={post.slug} post={post} />
+        <PostsItem key={post.slug} post={post} />
       ))
     }
   </ul>
